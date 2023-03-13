@@ -1,0 +1,185 @@
+-----------------
+name 	: sct
+source	: AUR
+desc	: screen control temperature
+-----------------
+name 	: evince
+desc 	: pdf viewer
+source	: pacman
+-----------------
+name 	: zathura
+source	: pacman
+desc	: document reader. doesn't work by itself , needs zathura-pdf
+		  and other dependencies.
+-----------------
+name	: ranger
+source	: pacman
+des		: vim like file manager.
+-----------------
+name	: sxiv
+source	: pacman
+desc	: image viewer.
+-----------------
+name	: xdg-utils 
+source	: pacman
+desc	: manage default apps and what opens based on filetype.
+-----------------
+name	: udiskie 
+source	: AUR
+desc	: auto mount usb drives.
+depend 	: udisks2
+-----------------
+name	: net-tools.
+source	: pacman.
+desc	: networking tools.
+-----------------
+name	: xmonad
+source	: pacman 
+desc	: window manager
+depen	: xmonad-contrib
+-----------------
+name	: qtile
+source	: pacman
+desc	: window manager 
+-----------------
+name	: picom
+source	: pacman
+desc	: compositor
+-----------------
+name	: nitrogen
+source	: pacman 
+desc	: wallpaper manager
+-----------------
+name	: man-db
+source	: pacman
+desc	: open manual pages for commands
+-----------------
+name	: ly
+source	: git
+desc	: minimal display manager
+-----------------
+name	: unzip
+source	: pacman
+desc	: unzip .zip files
+-----------------
+name	: bat
+source	: pacman 
+desc	: better cat (syntax highlight and scrolling)
+-----------------
+name	: lsd
+source	: pacman 
+desc	: better ls 
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+name	: 
+source	:
+desc	:
+-----------------
+
