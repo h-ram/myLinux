@@ -70,25 +70,25 @@ name	: lsd
 source	: pacman 
 desc	: better ls 
 -----------------
-name	: 
-source	:
-desc	:
+name	: flameshot
+source	: pacman 
+desc	: screenshots tool.
 -----------------
-name	: 
-source	:
-desc	:
+name	: tree
+source	: pacman
+desc	: Display directory tree.
 -----------------
-name	: 
-source	:
-desc	:
+name	: yay
+source	: AUR
+desc	: AUR wrapper.
 -----------------
-name	: 
-source	:
-desc	:
+name	: mpv 
+source	: pacman 
+desc	: Video Player.
 -----------------
-name	: 
-source	:
-desc	:
+name	: wallset
+source	: AUR
+desc	: LiveWallpaper manager.
 -----------------
 name	: 
 source	:
