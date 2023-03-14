@@ -12,9 +12,9 @@ grey="\033[0;37m"
 reset="\033[m"
 
 #--------Style1 :
-PS1="${green}[\u@\h ${grey}\w${cyan}] ${purple}\$ $reset"
+#PS1="${green}[\u@\h ${grey}\w${cyan}] ${purple}\$ $reset"
 #--------Style2 : 
-#S1="${green} => $reset"
+PS1="${green}  > $reset"
 #--------Style3 :
 #PS1="${cyan}[${grey}\w${cyan}] ${green}> $reset"
 #===========Aliases============
