@@ -183,6 +183,8 @@ source	:
 desc	:
 -----------------
 
+
+EXTRA : --------------------------------------------------------------
 vim/nvim				#Best IDE (check their website for latest version)
 neofetch				#Display system info (apt)
 cmatrix					#Text rain (apt)
