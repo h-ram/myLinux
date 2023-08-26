@@ -1,14 +1,32 @@
+red="\033[1;31m"
+green="\033[1;32m"
+yellow="\033[1;33m"
+blue="\033[1;34m"
+purple="\033[1;35m"
+cyan="\033[1;36m"
+reset="\033[m"
 
-#sudo pacman -Syy neofetch vim neovim git lsd
+echo -e "${red}" && sleep 0.3
+echo -e "=================================================" 
+echo -e "================= INSTALLING ====================" 
+echo -e "================================================="
+# Configurations __________________________________________#
 
+cp ./configs/SHELL/bash/bashrc ~/.bashrc && 
+cp ./configs/EDITOR/vim/vimrc ~/.vimrc && 
+mkdir -p ~/.config/alacritty/
+cp ./configs/TERMINAL/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml && 
+
+echo -e "${cyan}"
+echo "  bashrc ✓" && sleep 0.3
+echo "  vimrc ✓" && sleep 0.3
+echo "  alacritty ✓" && sleep 0.3
+echo -e "${reset}"
 #__________________________________________________________#
 
-cp -v ./configs/SHELL/bash/bashrc ~/.bashrc
-cp -v ./configs/EDITOR/vim/vimrc ~/.vimrc
+## Downloads _______________________________________________#
+echo -e "${red} Downloading Packages ! ${reset}" && sleep 0.3 
+sudo pacman -Syy neofetch vim neovim git lsd alacritty
 
-#__________________________________________________________#
 
-
-#__________________________________________________________#
-
-echo "Done !!!!"
+echo -e "${green} Done !!!!${reset}"
