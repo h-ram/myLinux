@@ -14,6 +14,8 @@ echo -e "================================================="
 
 cp ./configs/SHELL/bash/bashrc ~/.bashrc
 cp ./configs/EDITOR/vim/vimrc ~/.vimrc 
+mkdir -p ~/.vim
+cp -r ./configs/EDITOR/vim/colors ~/.vim/colors
 mkdir -p ~/.config/alacritty/
 cp ./configs/TERMINAL/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 mkdir -p ~/.config/xmonad
