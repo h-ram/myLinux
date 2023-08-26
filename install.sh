@@ -12,21 +12,25 @@ echo -e "================= INSTALLING ===================="
 echo -e "================================================="
 # Configurations __________________________________________#
 
-cp ./configs/SHELL/bash/bashrc ~/.bashrc && 
-cp ./configs/EDITOR/vim/vimrc ~/.vimrc && 
+cp ./configs/SHELL/bash/bashrc ~/.bashrc
+cp ./configs/EDITOR/vim/vimrc ~/.vimrc 
 mkdir -p ~/.config/alacritty/
-cp ./configs/TERMINAL/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml && 
+cp ./configs/TERMINAL/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+mkdir -p ~/.config/xmonad
+cp ./configs/WM/xmonad/xmonad.hs ~/.config/xmonad/xmonad.hs
+mkdir -p ~/.config/nvim
 
 echo -e "${cyan}"
 echo "  bashrc ✓" && sleep 0.3
 echo "  vimrc ✓" && sleep 0.3
 echo "  alacritty ✓" && sleep 0.3
+echo "  xmonad ✓" && sleep 0.3
 echo -e "${reset}"
 #__________________________________________________________#
 
 ## Downloads _______________________________________________#
 echo -e "${red} Downloading Packages ! ${reset}" && sleep 0.3 
-sudo pacman -Syy neofetch vim neovim git lsd alacritty
+#sudo pacman -Syy neofetch vim neovim git lsd alacritty evince tree htop 
 
 
 echo -e "${green} Done !!!!${reset}"

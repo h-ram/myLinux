@@ -10,7 +10,7 @@ import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
 --
-myTerminal      = "kitty"
+myTerminal      = "yakuake"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -48,7 +48,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
 
     -- close focused window
-    , ((modm ,			    xK_c     ), kill)
+    , ((modm              , xK_c     ), kill)
 
      -- Rotate through the available layout algorithms
     , ((modm,               xK_space ), sendMessage NextLayout)
