@@ -35,6 +35,7 @@ alias gitpush='git commit -a -m "[Empty]" && git push origin main'
 alias gitpull='git pull origin main'
 alias shutdown='shutdown -h now'
 alias py="python3"
+alias vim="nvim"
 
 #===========Commands=============
 neofetch

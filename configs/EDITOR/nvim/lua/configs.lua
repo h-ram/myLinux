@@ -1,34 +1,33 @@
-set number			"enable line numbers
-set mouse=a			"enables mouse usage
-syntax on			"syntax highlighting
-set autoindent		"automatically indents when entering code block
-set tabstop=4		"tab is the size of 4 spaces
-set shiftwidth=4	"when shifting tab = 4 spaces
-set smarttab		"uses tabstop as the size of tab (impements tabstop)
-set hlsearch		"highlight searched words
-set incsearch		"see the words being searched (incremental)
-set smartcase		"lowercase = insensitive , uppercase = sensitive
-set autowrite		"autosaves when switching between files
-set titlestring=%t  "set the vim window title to the file name Eg: test.py
-set title			"display that title
-set ruler			"displays a ruler in bottom right corner that show cursor position
-set confirm			"Display a confirmation dialog when closing an unsaved file.
-set laststatus=2	"file status , if written or not (displays a bar at the bottom)
-set cursorline	"Enable this if you feel like it
-set history=1000	"extend commands history (default =20)
-set nowrap 			"lines extend off the edge instead of dropping down in a new line.
-set wildmenu		"a menu that shows possible commands when pressing tab
+
+vim.opt.number = true
+vim.opt.mouse = "a"
+vim.opt.syntax = "on"
+vim.opt.autoindent = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.smarttab = true
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
+vim.opt.smartcase = true
+vim.opt.autowrite = true
+vim.opt.titlestring = "%t"
+vim.opt.title = true
+vim.opt.ruler = true
+vim.opt.confirm = true
+vim.opt.laststatus = 2
+vim.opt.cursorline = true
+vim.opt.history = 1000
+vim.opt.wrap = false
+vim.opt.wildmenu = true
+vim.cmd([[
 set encoding=UTF-8  "sets encoding to UTF-8
 set scrolloff=8   "minimum number of lines to keep above/below cursor
 set sidescrolloff=8 "minimum number of columns to keep from edges of the cursor
-set visualbell		"use visual bell instead of sound bell
-set t_vb=			"disable visual bell
 filetype on			"Detect filetype
 filetype indent on	"Load indentation settings for this filetype
 filetype plugin on	"Load plugging set for this filetype
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx "
 set termguicolors  	"add the colors that come with the terminal
-colorscheme molokai
 
 "Keyboard Mapping : (:help mapping)
 
@@ -72,11 +71,11 @@ vnoremap < <gv
 noremap <c-r> :w<CR>:!java %<CR> 	"switch '!java' with the language you want
 
 "running code using <F9>
-autocmd FileType java map <buffer> <F9> :w<CR>:exec '!time java' shellescape(@%, 1)<CR>
-autocmd FileType java imap <buffer> <F9> <esc>:w<CR>:exec '!time java' shellescape(@%, 1)<CR>
+autocmd FileType java map <buffer> <F9> :w<CR>:exec '!java' shellescape(@%, 1)<CR>
+autocmd FileType java imap <buffer> <F9> <esc>:w<CR>:exec '!java' shellescape(@%, 1)<CR>
 
-autocmd FileType python map <buffer> <F9> :w<CR>:exec '!time python3' shellescape(@%, 1)<CR>
-autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!time python3' shellescape(@%, 1)<CR>
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
 "Move 3 times faster by pressing shift
 noremap <s-j> 3j
@@ -85,4 +84,4 @@ noremap <s-k> 3k
 "Copy/Paste to clipboard (requires gvim)
 vnoremap <C-c> "+y
 noremap <C-v> "+P
-
+]])
