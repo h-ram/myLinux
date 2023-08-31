@@ -29,17 +29,6 @@ filetype plugin on	"Load plugging set for this filetype
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx "
 set termguicolors  	"add the colors that come with the terminal
 
-"Keyboard Mapping : (:help mapping)
-
-inoremap jj <ESC>		"map jj to switch to normal mode in insert mode
-vnoremap ii <ESC>		"map ii to switch to normal mode in visual mode	
-snoremap jj <ESC> 		"map jj to switch to normal mode in replace mode 
-
-noremap <c-s> :w<cr>	"Save file by  pressing Ctrl+s
-noremap <F8> :w<CR>		"Save the file by pressing <F8>
-noremap ; :
-
-
 nnoremap <s-j> <c-w>j	"Navigate the split view easier
 nnoremap <s-k> <c-w>k
 nnoremap <s-h> <c-w>h
@@ -67,7 +56,6 @@ vnoremap > >gv
 vnoremap < <gv
 
 
-
 noremap <c-r> :w<CR>:!java %<CR> 	"switch '!java' with the language you want
 
 "running code using <F9>
@@ -77,11 +65,6 @@ autocmd FileType java imap <buffer> <F9> <esc>:w<CR>:exec '!java' shellescape(@%
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
-"Move 3 times faster by pressing shift
-noremap <s-j> 3j
-noremap <s-k> 3k
-
-"Copy/Paste to clipboard (requires gvim)
 vnoremap <C-c> "+y
 noremap <C-v> "+P
 ]])

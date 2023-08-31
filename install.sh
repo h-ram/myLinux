@@ -21,12 +21,14 @@ cp ./configs/TERMINAL/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 mkdir -p ~/.config/xmonad
 cp ./configs/WM/xmonad/xmonad.hs ~/.config/xmonad/xmonad.hs
 mkdir -p ~/.config/nvim
+cp -r ./configs/EDITOR/nvim ~/.config/nvim
 
 echo -e "${cyan}"
 echo "  bashrc ✓" && sleep 0.3
 echo "  vimrc ✓" && sleep 0.3
 echo "  alacritty ✓" && sleep 0.3
 echo "  xmonad ✓" && sleep 0.3
+echo "  neovim ✓" && sleep 0.3
 echo -e "${reset}"
 #__________________________________________________________#
 

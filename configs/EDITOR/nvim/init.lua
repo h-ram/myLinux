@@ -1,4 +1,8 @@
-
-require("configs")
+require("keymaps")
+require("sets")
 require("plugins")
-vim.cmd.colorscheme("gruvbox")
+require("plugins_configs.nvimtree")
+require("plugins_configs.telescope")
+require("plugins_configs.colorscheme")
+require("plugins_configs.treesitter")
+require("plugins_configs.lspzero")
