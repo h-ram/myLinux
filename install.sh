@@ -15,13 +15,13 @@ echo -e "================================================="
 cp ./configs/SHELL/bash/bashrc ~/.bashrc
 cp ./configs/EDITOR/vim/vimrc ~/.vimrc 
 mkdir -p ~/.vim
-cp -r ./configs/EDITOR/vim/colors ~/.vim/colors
+cp -r ./configs/EDITOR/vim/colors ~/.vim
 mkdir -p ~/.config/alacritty/
 cp ./configs/TERMINAL/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 mkdir -p ~/.config/xmonad
 cp ./configs/WM/xmonad/xmonad.hs ~/.config/xmonad/xmonad.hs
 mkdir -p ~/.config/nvim
-cp -r ./configs/EDITOR/nvim ~/.config/nvim
+cp -r ./configs/EDITOR/nvim ~/.config/
 
 echo -e "${cyan}"
 echo "  bashrc ✓" && sleep 0.3
