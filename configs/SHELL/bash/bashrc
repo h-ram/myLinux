@@ -38,4 +38,5 @@ alias py="python3"
 alias vim="nvim"
 
 #===========Commands=============
+tmux
 neofetch
