@@ -12,14 +12,14 @@ grey="\[\033[0;37m\]"
 reset="\[\033[m\]"
 
 #--------Style1 :
-#PS1="${cyan}[${green}\u@\h ${grey}\w${cyan}] ${purple}\$ $reset"
-#--------Style2 : 
-#PS1="${green}  > $reset"
-#--------Style3 :
 PS1="${cyan}[${grey}\w${cyan}] ${green}> $reset"
+#--------Style2 : 
+# PS1="${cyan}[${green}\u@\h ${grey}\w${cyan}] ${purple}\$ $reset"
 #===========Aliases============
 alias open='xdg-open'
 
+alias la="ls -a"
+alias ll="ls -la"
 alias grep='grep -i --color=auto'
 alias cp="cp -r"
 alias rm="rm -rf"
