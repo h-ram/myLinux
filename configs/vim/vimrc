@@ -5,6 +5,7 @@ set autoindent		"automatically indents when entering code block
 set tabstop=4		"tab is the size of 4 spaces
 set shiftwidth=4	"when shifting tab = 4 spaces
 set smarttab		"uses tabstop as the size of tab (impements tabstop)
+set nolist
 set hlsearch		"highlight searched words
 set incsearch		"see the words being searched (incremental)
 set smartcase		"lowercase = insensitive , uppercase = sensitive

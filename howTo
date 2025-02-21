@@ -1,4 +1,0 @@
-
-Adjust brightness --------------------------
-	check /sys/class/backlight/acpi_device0/
-
