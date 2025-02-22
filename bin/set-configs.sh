@@ -3,7 +3,7 @@
 
 echo "Setting Configuration file"
 
-CONFIGS=$(find ~ -type d -path "*/myArch/configs")
+CONFIGS=$(find ~ -type d -path "*/myLinux/configs")
 
 cp -f $CONFIGS/bashrc ~/.bashrc
 cp -f $CONFIGS/vim/vimrc ~/.vimrc 

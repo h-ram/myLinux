@@ -11,7 +11,8 @@ echo -e "================================================="
 echo -e "================= INSTALLING ====================" 
 echo -e "================================================="
 # Configurations __________________________________________#
-source ./set-configs.sh
-source ./download-packages.sh
+BIN=$(find ~ -type d -path "*/myLinux/bin")
+source $BIN/set-configs.sh
+source $BIN/download-packages.sh
 
 source ~/.bashrc
