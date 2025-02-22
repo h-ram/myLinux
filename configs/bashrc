@@ -19,7 +19,9 @@ PS1="${cyan}[${grey}\w${cyan}] ${green}> $reset"
 alias open='xdg-open'
 
 alias la="ls -a"
-alias ll="ls -la"
+alias ll="ls -l"
+alias lla="ls -la"
+alias lal="ls -la"
 alias grep='grep -i --color=auto'
 alias cp="cp -r"
 alias rm="rm -rf"
@@ -27,4 +29,8 @@ alias tree="tree -CL 3"
 alias shutdown='shutdown -h now'
 alias py="python3"
 
-#===========Commands=============
+#=========== Custom Bashrcs =============
+if [ -f ~/.bashrc_machine_specific ]; then
+	source ~/.bashrc_machine_specific
+fi
+
