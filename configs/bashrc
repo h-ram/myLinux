@@ -12,7 +12,12 @@ grey="\[\033[0;37m\]"
 reset="\[\033[m\]"
 
 #--------Style1 :
-PS1="${cyan}[${grey}\w${cyan}] ${green}> $reset"
+# PS1="${cyan}[${grey}\w${cyan}] ${green}> $reset"
+#--------Style2 :
+git_branch() {
+	git branch 2>/dev/null | sed -n '(/\* /s///p)'
+}
+PS1="\n${green}\u@\h ${blue}[\w]${cyan} \$(git_branch)\n${red}-❯ ${reset}"
 #--------Style2 : 
 # PS1="${cyan}[${green}\u@\h ${grey}\w${cyan}] ${purple}\$ $reset"
 #===========Aliases============
