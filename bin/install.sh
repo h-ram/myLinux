@@ -16,3 +16,4 @@ source $BIN/set-configs.sh
 source $BIN/download-packages.sh
 
 source ~/.bashrc
+echo -e "${reset}"
