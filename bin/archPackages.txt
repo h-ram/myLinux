@@ -1,0 +1,12 @@
+man-db                      # for the man command
+firefox   
+htop
+cronie                      # for cronjobs and the "crontab" command
+vi                          # some commands used it as default
+vim
+rclone                      # for cloud storage
+visual-studio-code-bin      # (AUR) vs-code
+telegram-desktop
+
+jdk17-openjdk
+python3

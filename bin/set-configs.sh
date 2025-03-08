@@ -22,3 +22,9 @@ echo "  vimrc ✓" && sleep 0.3
 # echo "  tmux ✓" && sleep 0.3
 
 
+
+# ----------------- ROOT --------------------
+
+sudo cp -f $CONFIGS/bashrc /root/.bashrc
+sudo cp -f $CONFIGS/vim/vimrc /root/.vimrc 
+sudo mkdir -p /root/.vim && sudo cp -rf $CONFIGS/vim/colors /root/.vim/
