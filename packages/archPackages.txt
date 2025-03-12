@@ -15,6 +15,7 @@ flameshot
 obsidian
 tlp                         # ThinkPad Linux Powermanagement
 tlpui                       # (AUR) Gui for tlp
+networkmanager              # [enable it]
 
 jdk17-openjdk
 python3
